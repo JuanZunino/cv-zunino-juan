@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+    --color-principal: #2c3e50;
+    --color-acento: #3498db;
+    --color-fondo: #0603336c;
+    --fuente-base: 'Montserrat', sans-serif;
+}
+
+.body-estilo {
+    font-family: var(--fuente-base);
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.main-header {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(222, 218, 252, 0.671);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--color-acento);
+}
+
+.user-name {
+    margin: 10px 0 5px;
+    color: var(--color-principal);
+}
+
+.user-title {
+    font-weight: 300;
+    color: #7f8c8d;
+}
+
+.about-section, .experience-section, .skills-section, .contact-section {
+    background-color: rgba(222, 218, 252, 0.671);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: var(--color-acento);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.btn-submit {
+    background-color: var(--color-principal);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.fecha-trabajo {
+    font-style: italic;
+    font-weight: 300; 
+    font-size: 0.8em;  
+    margin-left: 10px;
+    color: #7f8c8d;
+}
+
+.main-header, 
+.about-section, 
+.experience-section, 
+.skills-section, 
+.contact-section {
+    text-align: center;
+}
