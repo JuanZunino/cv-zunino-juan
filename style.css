@@ -10,13 +10,10 @@ body {
 }
 
 :root {
-    /* Colores base en Hexadecimal */
     --color-principal: #2c3e50;
     --color-acento: #3498db;
     --color-fondo: #0603336c;
-    --color-gris-texto: #7f8c8d;
-    
-    /* Variables Semánticas (Explicando el uso como pidió el profe) */
+    --color-gris-texto: #7f8c8d;    
     --fuente-base: 'fuente_personalizada', sans-serif;
     --color-texto-blanco: #ffffff; 
     --btn-submit-color-texto: #ffffff;
@@ -75,7 +72,7 @@ body {
 
 .skills-list li {
     background: var(--color-acento);
-    color: var(--skills-item-color-texto); /* Cambiado de white */
+    color: var(--skills-item-color-texto);
     padding: 0.3125rem 0.9375rem;
     border-radius: 1.25rem;
     font-size: 0.9rem;
@@ -91,7 +88,7 @@ body {
 
 .btn-submit {
     background-color: var(--color-principal);
-    color: var(--btn-submit-color-texto); /* Cambiado de white */
+    color: var(--btn-submit-color-texto);
     border: none;
     padding: 0.625rem;
     cursor: pointer;
@@ -105,7 +102,7 @@ body {
     right: 1.25rem;
     padding: 0.625rem 1.25rem;
     background-color: var(--color-acento);
-    color: var(--color-texto-blanco); /* Cambiado de white */
+    color: var(--color-texto-blanco);
     border: none;
     border-radius: 3.125rem;
     cursor: pointer;
