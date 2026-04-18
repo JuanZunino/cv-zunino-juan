@@ -8,7 +8,6 @@ window.onscroll = function() {
     }
 };
 
-
 btnTop.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
