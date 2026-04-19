@@ -3,13 +3,21 @@
 :root {
     --color-principal: #2c3e50;
     --color-acento: #3498db;
-    --color-fondo: #0603336c;
+    --color-fondo-pagina: #0603336c;
+    --color-fondo-seccion: rgba(222, 218, 252, 0.671);
+    --color-texto-gris: #7f8c8d;
+    --color-texto-blanco: #ffffff;
     --fuente-base: 'Montserrat', sans-serif;
+    --btn-submit-color-texto: var(--color-texto-blanco);
+    --btn-scroll-color-texto: var(--color-texto-blanco);
+    --skills-item-color-texto: var(--color-texto-blanco);
+    --color-sombra-suave: rgba(0, 0, 0, 0.1);
+    --color-sombra-fuerte: rgba(0, 0, 0, 0.3);
 }
 
 .body-estilo {
     font-family: var(--fuente-base);
-    background-color: var(--color-fondo);
+    background-color: var(--color-fondo-pagina);
     color: var(--color-principal);
     margin: 0;
     padding: 20px;
@@ -19,9 +27,9 @@
 .main-header {
     text-align: center;
     padding: 40px;
-    background-color: rgba(222, 218, 252, 0.671);
+    background-color: var(--color-fondo-seccion);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px var(--color-sombra-suave);
 }
 
 .profile-img {
@@ -39,11 +47,11 @@
 
 .user-title {
     font-weight: 300;
-    color: #7f8c8d;
+    color: var(--color-texto-gris);
 }
 
 .about-section, .experience-section, .skills-section, .contact-section {
-    background-color: rgba(222, 218, 252, 0.671);
+    background-color: var(--color-fondo-seccion);
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
@@ -59,7 +67,7 @@
 
 .skills-list li {
     background: var(--color-acento);
-    color: white;
+    color: var(--skills-item-color-texto);
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.9em;
@@ -75,7 +83,7 @@
 
 .btn-submit {
     background-color: var(--color-principal);
-    color: white;
+    color: var(--btn-submit-color-texto);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -89,11 +97,11 @@
     right: 20px;
     padding: 10px 20px;
     background-color: var(--color-acento);
-    color: white;
+    color: var(--btn-scroll-color-texto);
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px var(--color-sombra-fuerte);
 }
 
 .fecha-trabajo {
@@ -101,7 +109,7 @@
     font-weight: 300; 
     font-size: 0.8em;  
     margin-left: 10px;
-    color: #7f8c8d;
+    color: var(--color-texto-gris);
 }
 
 .main-header, 
