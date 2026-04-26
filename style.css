@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('./fonts/roboto.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
 
 :root {
     --color-principal: #2c3e50;
     --color-acento: #3498db;
-    --color-fondo: #0603336c;
-    --fuente-base: 'Montserrat', sans-serif;
+    --fuente-base: 'Roboto', sans-serif;
+    --color-fondo-pagina: #0603336c;
+    --color-fondo-seccion: rgba(222, 218, 252, 0.671);
+    --color-texto-gris: #7f8c8d;
+    --color-texto-blanco: #ffffff;
+    --btn-submit-color-texto: var(--color-texto-blanco);
+    --btn-scroll-color-texto: var(--color-texto-blanco);
+    --skills-item-color-texto: var(--color-texto-blanco);
+    --color-sombra-suave: rgba(0, 0, 0, 0.1);
+    --color-sombra-fuerte: rgba(0, 0, 0, 0.3);
 }
 
 .body-estilo {
     font-family: var(--fuente-base);
-    background-color: var(--color-fondo);
+    background-color: var(--color-fondo-pagina);
     color: var(--color-principal);
     margin: 0;
     padding: 1.25rem;
@@ -19,9 +32,9 @@
 .main-header {
     text-align: center;
     padding: 2.5rem;
-    background-color: rgba(222, 218, 252, 0.671);
     border-radius: 0.5rem;
-    box-shadow: 0 0.25rem 0.375rem rgba(0,0,0,0.1);
+    box-shadow: 0 0.25rem 0.375rem var(--color-sombra-suave);
+    background-color: var(--color-fondo-seccion);
 }
 
 .profile-img {
@@ -39,14 +52,14 @@
 
 .user-title {
     font-weight: 300;
-    color: #7f8c8d;
+    color: var(--color-texto-gris);
 }
 
 .about-section, .experience-section, .skills-section, .contact-section {
-    background-color: rgba(222, 218, 252, 0.671);
     margin-top: 1.25rem;
     padding: 1.25rem;
     border-radius: 0.5rem;
+    background-color: var(--color-fondo-seccion);
 }
 
 .skills-list {
@@ -59,9 +72,9 @@
 
 .skills-list li {
     background: var(--color-acento);
-    color: white;
     padding: 0.3125rem 0.9375rem;
     border-radius: 1.25rem;
+    color: var(--skills-item-color-texto);
     font-size: 0.9em;
 }
 
@@ -75,7 +88,7 @@
 
 .btn-submit {
     background-color: var(--color-principal);
-    color: white;
+    color: var(--btn-submit-color-texto);
     border: none;
     padding: 0.625rem;
     cursor: pointer;
@@ -83,16 +96,17 @@
 }
 
 .scroll-top-btn {
+    display: none;
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
     padding: 0.625rem 1.25rem;
     background-color: var(--color-acento);
-    color: white;
+    color: var(--btn-scroll-color-texto);
     border: none;
     border-radius: 3.125rem;
     cursor: pointer;
-    box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.3);
+    box-shadow: 0 0.125rem 0.3125rem var(--color-sombra-fuerte);
 }
 
 .fecha-trabajo {
@@ -100,7 +114,7 @@
     font-weight: 300; 
     font-size: 0.8em;  
     margin-left: 0.625rem;
-    color: #7f8c8d;
+    color: var(--color-texto-gris);
 }
 
 .main-header, 
